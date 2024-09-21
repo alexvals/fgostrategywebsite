@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-GB"> <!-- Sets language to British English -->
+    <head>
+        <!-- Tab/window title of the webpage -->
+        <title>
+            FGO Strategy
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Webpage scales to device width with no zoom in or out -->
+        <link rel="stylesheet" href="css/style.css"> <!-- Attaches styling sheet to webpage -->
+        <script type="text/javascript" src="js/script.js"></script> <!-- Attaches script file to webpage -->
+    </head>
+    <body>
+        <!-- Menu section -->
+        <div id="menu">
+            <div id="logo">
+                <!-- Website logo -->
+                <img src="images/logo.webp" alt="Fate Grand Order logo">
+            </div>
+            <!-- Navigation buttons -->
+            <nav>
+                <a id="home" href="index.html">Home</a> <!-- Link to currently opened page -->
+                <a id="about" href="about.html">About</a> <!-- Link to About page -->
+                <a id="teams" href="services.html">Teams</a> <!-- Link to currently opened page -->
+                <a class="active" id="gallery" href="gallery.html">Gallery</a> <!-- Link to currently opened page -->
+                <a id="contact" href="contact.html">Contact</a> <!-- Link to Contact page -->
+            </nav>
+        </div>
+        <!-- Content section -->
+        <div id="content">
+            <!-- Gallery image -->
+            <img id="gallery-media" src="images/gallery/castoria ascension 1.webp">
+        </div>
+        <!-- Gallery navigation buttons -->
+        <div class="gallery-navigation">
+            <!-- Buttons call functions from script file -->
+            <button class="gallery-navigation" type="button" onclick="lastImage()"><</button>
+            <p class="gallery-navigation" id="gallery-text">1/22</p>
+            <button class="gallery-navigation" type="button" onclick="nextImage()">></button>
+        </div>
+        <!-- Footer section -->
+        <div id="footer">
+            <p>Website created by @alexvals</p>
+        </div>
+    </body>
+</html>
