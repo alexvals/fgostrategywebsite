@@ -9,7 +9,7 @@ body {
 }
 
 /*sets text colour to dark grey and background colour to light blue for all main content containers*/
-#content, #content-teams, #gallery-navigation, #gallery-listbox {
+#content, #content-about, #content-teams, #gallery-navigation, #gallery-listbox {
     background-color: rgb(190, 200, 209) !important;
     color: rgb(6, 12, 12);
 }
@@ -22,6 +22,7 @@ h1 {
 /*the maximum width of all images can only be the maximum width of the screen*/
 img {
     max-width: 100%;
+    height: auto;
 }
 
 /*adds space vertically to the container, and removes borders for all elements in the container*/
@@ -40,14 +41,21 @@ a {
     margin: 1%;
 }
 
+/*lightens the colour of the active link and makes it so hover effects don't apply to it*/
+a.active {
+    color: aliceblue !important;
+    background-color: #04065f !important;
+}
+
+/*when a non-active link is hovered over, the link's colours are*/
+a:hover {
+    background-color: rgb(190, 200, 209);
+    color: #04065f;
+}
+
 /*makes the text size larger for text elements*/
 p, label, textarea, input {
     font-size: 150%;
-}
-
-/*lightens the colour of the active link*/
-a.active {
-    color: aliceblue !important;
 }
 
 /*removes all space around the container, and stretches to fit all leftover space*/
@@ -56,39 +64,56 @@ a.active {
     display: flex;
 }
 
-/*sets the width of the image inside to the source image's width, and adds space around the container*/
-#left-media {
-    width: 100%;
-    margin: 1%;
-    margin-left: 15%;
+/*elements are displayed one per line, center-aligned, and spaced evenly, with extra padding*/
+#content-about {
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3%;
 }
 
-/*adds space around the container, and centers it vertically*/
-#right-content {
-    margin: 1%;
-    margin-right: 15%;
-    margin-top: auto;
-    margin-bottom: auto;
+/*elements are left to right and spaced evenly and centered*/
+#top-media {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 3%;
+    padding-bottom: 1%;
 }
 
-/*adds the child containers within the container horizontally*/
-#content-teams {
-    margin: 0;
+/*elements are one per line top to bottm*/
+#title-text {
     display: flex;
     flex-direction: column;
 }
 
-/*adds elements within the containers vertically, and adds blank space at the left side*/
-#first-team, #second-team, #third-team {
-    display: flex;
-    flex-direction: row;
-    margin-left: 11.5%;
+/*makes the about page mobile-friendly by changing the arranging of elements*/
+@media (max-width: 900px) {
+    #content-about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
-/*adds blank space at the top and bottom of the container*/
-#first-team, #third-team {
-    margin-top: 0.5%;
-    margin-bottom: 0.5%;
+/*adds the child containers within the container horizontally*/
+#content-teams {
+    padding: 1%;
+    padding-left: 4%;
+    padding-right: 4%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3%;
+}
+
+/*adds elements within the containers vertically, and adds blank space at the left side*/
+.one-team {
+    display: flex;
+    flex-direction: row;
 }
 
 /*adds blank space around the images, and stops images changing aspect ratio*/
@@ -145,11 +170,40 @@ button:hover {
 textarea {
     display: block;
     font-family: Arial;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    max-height: 600px;
+    width: 300px;
+    background-color: aliceblue;
 }
 
 /*inputs are always on a new line and centered horizontally*/
 input {
     display: block;
     margin: auto;
+    width: 300px;
+    background-color: aliceblue;
+}
+
+/*gives submit buttons rounded corners*/
+input[type=submit] {
+    border-radius: 30px;
+}
+
+/*changes colours when a submit button is hovered over*/
+input[type=submit]:hover {
+    color: aliceblue;
+    background-color: #bec8d1;
+}
+
+/*displays videos on a new line*/
+#videos {
+    display: block;
+}
+
+/*gives videos rounded corners*/
+iframe {
+    border-radius: 30px;
 }

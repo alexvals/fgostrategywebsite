@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-GB"> <!-- Sets language to British English -->
+<!-- Sets language to British English -->
+<html lang="en-GB">
     <head>
         <!-- Tab/window title of the webpage -->
         <title>
             FGO Strategy
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Webpage scales to device width with no zoom in or out -->
-        <link rel="stylesheet" href="css/style.css"> <!-- Attaches styling sheet to webpage -->
+        <!-- Webpage scales to device width with no zoom in or out -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Attaches styling sheet to webpage -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Attaches icon to show on website tab -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     </head>
     <body>
         <!-- Navigation menu -->
@@ -17,29 +22,45 @@
             </div>
             <div id="nav-buttons">
                 <nav>
-                    <a id="home" href="index.html">Home</a> <!-- Link to Home page -->
-                    <a class="active" id="about" href="about.html">About</a> <!-- Link to currently opened page -->
-                    <a id="teams" href="services.html">Teams</a> <!-- Link to Teams page -->
-                    <a id="gallery" href="gallery.html">Gallery</a> <!-- Link to Gallery page -->
-                    <a id="contact" href="contact.html">Contact</a> <!-- Link to Contact page -->
+                    <!-- Link to Home page -->
+                    <a id="home" href="index.html">Home</a>
+                    <!-- Link to currently opened page -->
+                    <a class="active" id="about" href="about.html">About</a>
+                    <!-- Link to Teams page -->
+                    <a id="teams" href="teams.html">Teams</a>
+                    <!-- Link to Gallery page -->
+                    <a id="gallery" href="gallery.html">Gallery</a>
+                    <!-- Link to Contact page -->
+                    <a id="contact" href="contact.html">Contact</a>
                 </nav>
             </div>
         </div>
         <!-- Main content area -->
-        <div id="content">
-            <div id="left-media">
-                <img src="images/about.webp"> <!-- Image on the left side -->
+        <div id="content-about">
+            <div id="top-media">
+                <!-- Image on the left side -->
+                <img src="images/about.webp">
+                <div id="title-text">
+                    <!-- Main heading -->
+                    <h1>About</h1>
+                    <!-- Description of the website's purpose -->
+                    <p>FGO Strategy is a website made to provide simple team-building advice. The teams provided will help clear any daily quests from novice to extreme difficulty.</p>
+                    <p>The teams are also effective for farming for lottery events such as Nerofest 2024's Grand Final. The teams created use the minimum amount of servants necessary to perform at your best in the game, saving your resources and your time.</p>
+                    <p>Difficult boss fights will be able to be completed in minimum time or with minimum damage to your team following the simple steps provided in the Teams page. For the looks of various servants used, and useful videos, pick the Gallery page. For any questions, please use the Contact page.</p>
+                    <p>Below are some videos from the game Fate/Grand Order that illustrate the battle system and show the use cases for characters shown in the Teams page.</p>
+                </div>
             </div>
-            <div id="right-content">
-                <h1>About</h1> <!-- Main heading -->
-                <p>FGO Strategy is a website made to provide simple team-building advice. The teams provided will help clear any daily quests from novice to extreme difficulty.
-                    <br><br>The teams are also effective for farming for lottery events such as Nerofest 2024's Grand Final. The teams created use the minimum amount of servants necessary to perform at your best in the game, saving your resources and your time.
-                    <br><br>Difficult boss fights will be able to be completed in minimum time or with minimum damage to your team following the simple steps provided in the Teams page. For the looks of various servants used, and useful videos, pick the Gallery page. For any questions, please use the Contact page.</p> <!-- Description of the website's purpose -->
+            <!-- Area with three YouTube videos -->
+            <div id="videos">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TvGR42Dwgtw?si=AXvP6kDTSa4YOjEI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RQGCcNFpx8U?si=xq1evaC5a9ma5SsI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/3tvDocNJYKw?si=7nfXlSgztHCFQKEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
         <!-- Footer section -->
         <div id="footer">
-            <p>Website created by @alexvals</p> <!-- Footer text -->
+            <!-- Footer text -->
+            <p>Website created by @alexvals</p>
         </div>
     </body>
 </html>

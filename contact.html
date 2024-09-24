@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en-GB"> <!-- Sets language to British English -->
+<!-- Sets language to British English -->
+<html lang="en-GB">
     <head>
         <!-- Tab/window title of the webpage -->
         <title>
             FGO Strategy
         </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Webpage scales to device width with no zoom in or out -->
-        <link rel="stylesheet" href="css/style.css"> <!-- Attaches styling sheet to webpage -->
+        <!-- Webpage scales to device width with no zoom in or out -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Attaches styling sheet to webpage -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Attaches icon to show on website tab -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     </head>
     <body>
         <!-- Navigation menu -->
@@ -17,33 +22,48 @@
             </div>
             <div id="nav-buttons">
                 <nav>
-                    <a id="home" href="index.html">Home</a> <!-- Link to Home page -->
-                    <a id="about" href="about.html">About</a> <!-- Link to About page -->
-                    <a id="teams" href="services.html">Teams</a> <!-- Link to Teams page -->
-                    <a id="gallery" href="gallery.html">Gallery</a> <!-- Link to Gallery page -->
-                    <a class="active" id="contact" href="contact.html">Contact</a> <!-- Link to currently opened page -->
+                    <!-- Link to Home page -->
+                    <a id="home" href="index.html">Home</a>
+                    <!-- Link to About page -->
+                    <a id="about" href="about.html">About</a>
+                    <!-- Link to Teams page -->
+                    <a id="teams" href="teams.html">Teams</a>
+                    <!-- Link to Gallery page -->
+                    <a id="gallery" href="gallery.html">Gallery</a>
+                    <!-- Link to currently opened page -->
+                    <a class="active" id="contact" href="contact.html">Contact</a>
                 </nav>
             </div>
         </div>
         <!-- Main content area -->
-        <div id="content">
+        <div id="content-about">
             <div id="left-media">
-                <img src="images/contact.webp"> <!-- Image on the left side -->
+                <!-- Image on the left side -->
+                <img src="images/contact.webp">
             </div>
             <div id="right-content">
-                <h1>Contact Form</h1> <!-- Main heading -->
-                <form> <!-- Makes a form container -->
-                    <label for="email">Email address:</label> <!-- Label for email input -->
-                    <input type="text" name="email" placeholder="example@example.com"> <!-- Email input field -->
-                    <label for="message">Message:</label> <!-- Label for message -->
-                    <textarea name="message" placeholder="Type your message here..."></textarea> <!-- Message multi-line resizable input field -->
-                    <input type="submit" value="Submit"> <!-- Submit form button -->
+                <!-- Main heading -->
+                <h1>Contact Form</h1>
+                <p>If you would like to ask about any part of the website, such as for more guidance on the teams included, or character substitutions if you have certain servants, please fill in the contact form below.</p>
+                <!-- Makes a form container -->
+                <form>
+                    <!-- Label for email input -->
+                    <label for="email">Email address:</label>
+                    <!-- Email input field -->
+                    <input type="email" name="email" placeholder="example@example.com" required>
+                    <!-- Label for message -->
+                    <label for="message">Message:</label>
+                    <!-- Message multi-line resizable input field -->
+                    <textarea name="message" placeholder="Type your message here..."></textarea>
+                    <!-- Submit form button -->
+                    <input type="submit" value="Submit">
                 </form>
             </div>
         </div>
         <!-- Footer section -->
         <div id="footer">
-            <p>Website created by @alexvals</p> <!-- Footer text -->
+            <!-- Footer text -->
+            <p>Website created by @alexvals</p>
         </div>
     </body>
 </html>
