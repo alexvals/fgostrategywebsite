@@ -1,4 +1,4 @@
-#Class project
+# Class project
 
 I have made a website with three strategies for clearing the bulk of the FGO mobile game storyline.
 I have added a contact page, about section, home page, and a gallery.
