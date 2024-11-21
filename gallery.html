@@ -14,44 +14,36 @@
         <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     </head>
     <body>
-        <!-- Navigation menu -->
-        <div id="menu">
-            <div id="logo">
-                <!-- Website logo -->
-                <img src="images/logo.webp" alt="Fate Grand Order logo">
-            </div>
-            <!-- Navigation buttons -->
-            <nav>
-                <!-- Link to currently opened page -->
-                <a id="home" href="index.html">Home</a>
-                <!-- Link to About page -->
-                <a id="about" href="about.html">About</a>
-                <!-- Link to currently opened page -->
-                <a id="teams" href="teams.html">Teams</a>
-                <!-- Link to currently opened page -->
-                <a class="active" id="gallery" href="gallery.html">Gallery</a>
-                <!-- Link to Contact page -->
-                <a id="contact" href="contact.html">Contact</a>
-            </nav>
-        </div>
+        <!-- Navigation buttons -->
+        <nav>
+            <!-- Website logo -->
+            <img src="images/big logo.webp" alt="Fate Grand Order logo">
+            <!-- Link to currently opened page -->
+            <a href="index.html">Home</a>
+            <!-- Link to About page -->
+            <a href="about.html">About</a>
+            <!-- Link to currently opened page -->
+            <a href="teams.html">Teams</a>
+            <!-- Link to currently opened page -->
+            <a class="active" href="gallery.html">Gallery</a>
+            <!-- Link to Contact page -->
+            <a href="contact.html">Contact</a>
+        </nav>
         <!-- Content section -->
         <div id="content">
             <!-- Gallery image -->
             <img id="gallery-media" src="images/gallery/castoria ascension 1.webp">
-        </div>
         <!-- Gallery navigation buttons -->
-        <div class="gallery-navigation">
-            <!-- Buttons call functions from script file -->
-            <button class="gallery-navigation" type="button" onclick="lastImage()"><</button>
-            <p class="gallery-navigation" id="gallery-text">1/22</p>
-            <button class="gallery-navigation" type="button" onclick="nextImage()">></button>
+            <div class="gallery-navigation">
+                <!-- Buttons call functions from script file -->
+                <button class="gallery-navigation" type="button" onclick="lastImage()"><</button>
+                <p class="gallery-navigation" id="gallery-text">1/22</p>
+                <button class="gallery-navigation" type="button" onclick="nextImage()">></button>
+            </div>
         </div>
         <!-- Footer section -->
-        <div id="footer">
-            <!-- Footer text -->
-            <p>Website created by @alexvals</p>
-        </div>
+        <p>Website created by @alexvals</p>
         <!-- Links the JavaScript file last, which is in charge of changing gallery images, for best page loading performance-->
-        <script src="js/script.js"></script>
+        <script src="js/gallery.js"></script>
     </body>
 </html>
