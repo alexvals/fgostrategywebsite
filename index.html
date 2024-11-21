@@ -15,24 +15,34 @@
     </head>
     <body>
         <!-- Navigation menu -->
-            <nav>
+        <div id="menu">
+            <div id="logo">
                 <!-- Website logo -->
-                <img src="images/big logo.webp" alt="Fate Grand Order logo">
-                <!-- Link to currently opened page -->
-                <a class="active" href="index.html">Home</a>
-                <!-- Link to About page -->
-                <a href="about.html">About</a>
-                <!-- Link to Teams page -->
-                <a href="teams.html">Teams</a>
-                <!-- Link to Gallery page -->
-                <a href="gallery.html">Gallery</a>
-                <!-- Link to Contact page -->
-                <a href="contact.html">Contact</a>
-            </nav>
-        <!-- Content image being displayed -->
-        <img id="index-img" src="images/cover.webp">
-        <!-- Footer text -->
-        <p>Website created by @alexvals</p>
-        <script src="js/update image.js"></script>
+                <img src="images/logo.webp" alt="Fate Grand Order logo">
+            </div>
+            <div id="nav-buttons">
+                <nav>
+                    <!-- Link to currently opened page -->
+                    <a class="active" id="home" href="index.html">Home</a>
+                    <!-- Link to About page -->
+                    <a id="about" href="about.html">About</a>
+                    <!-- Link to Teams page -->
+                    <a id="teams" href="teams.html">Teams</a>
+                    <!-- Link to Gallery page -->
+                    <a id="gallery" href="gallery.html">Gallery</a>
+                    <!-- Link to Contact page -->
+                    <a id="contact" href="contact.html">Contact</a>
+                </nav>
+            </div>
+        </div>
+        <!-- Main image section -->
+        <div id="big-picture">
+            <!-- Large image being displayed -->
+            <img src="images/cover.webp">
+        </div>
+        <!-- Footer section -->
+        <div id="footer">
+            <p>Website created by @alexvals</p> <!-- Footer text -->
+        </div>
     </body>
 </html>

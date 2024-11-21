@@ -1,7 +1,3 @@
-html {
-    background-color: #181a1b;
-}
-
 /*gets rid of any empty space, sets the background colour of the webpage to dark blue, sets the text colour to white,
 the font to arial, and aligns all elements to the center of the page*/
 body {
@@ -10,72 +6,10 @@ body {
     color: aliceblue;
     font-family: Arial;
     text-align: center;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-}
-
-nav {
-    display: flexbox;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: 200%;
-    width: 100%;
-    height: 100%;
-    gap: 5%;
-    padding-top: 1%;
-}
-
-img {
-    object-fit: contain;
-    max-width: 100%;
-}
-
-nav img {
-    height: auto;
-    width: 10%;
-}
-
-/*makes links have no underline*/
-a {
-    text-decoration: none;
-    color: rgb(190, 200, 209);
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-}
-
-a:hover {
-    color: #04065f;
-    background-color: rgba(190, 200, 209, 0.9);
-}
-
-/*lightens the colour of the active link*/
-a.active {
-    color: aliceblue !important;
-    background-color: #04065f !important;
-}
-
-/*removes all space around the container, and stretches to fit all leftover space*/
-#content {
-    margin: 0;
-    display: flexbox;
-    padding-top: 1%;
-    padding-bottom: 1%;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 3%;
-    width: 100%;
-    box-sizing: content-box;
 }
 
 /*sets text colour to dark grey and background colour to light blue for all main content containers*/
-#content, #gallery-navigation, #gallery-listbox {
+#content, #content-about, #content-teams, #gallery-navigation, #gallery-listbox {
     background-color: rgb(190, 200, 209) !important;
     color: rgb(6, 12, 12);
 }
@@ -91,11 +25,56 @@ img {
     height: auto;
 }
 
+/*adds space vertically to the container, and removes borders for all elements in the container*/
+#menu {
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    border: none;
+}
+
+/*makes links bold off-white large text*/
+a {
+    text-decoration: none;
+    color: rgb(190, 200, 209);
+    font-weight: bold;
+    font-size: 200%;
+    margin: 1%;
+}
+
+/*lightens the colour of the active link and makes it so hover effects don't apply to it*/
+a.active {
+    color: aliceblue !important;
+    background-color: #04065f !important;
+}
+
+/*when a non-active link is hovered over, the link's colours are*/
+a:hover {
+    background-color: rgb(190, 200, 209);
+    color: #04065f;
+}
+
 /*makes the text size larger for text elements*/
 p, label, textarea, input {
     font-size: 150%;
 }
 
+/*removes all space around the container, and stretches to fit all leftover space*/
+#content {
+    margin: 0;
+    display: flex;
+}
+
+/*elements are displayed one per line, center-aligned, and spaced evenly, with extra padding*/
+#content-about {
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3%;
+}
+
+/*elements are left to right and spaced evenly and centered*/
 #top-media {
     display: flex;
     align-items: center;
@@ -105,16 +84,18 @@ p, label, textarea, input {
     padding-bottom: 1%;
 }
 
+/*elements are one per line top to bottm*/
 #title-text {
     display: flex;
     flex-direction: column;
 }
 
-/*adds space around the container, and centers it vertically*/
-#right-content {
-    margin-top: auto;
-    margin-bottom: auto;
-    max-width: 100%;
+/*makes the about page mobile-friendly by changing the arranging of elements*/
+@media (max-width: 900px) {
+    #content-about {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /*adds the child containers within the container horizontally*/
@@ -130,7 +111,7 @@ p, label, textarea, input {
 }
 
 /*adds elements within the containers vertically, and adds blank space at the left side*/
-#first-team, #second-team, #third-team {
+.one-team {
     display: flex;
     flex-direction: row;
 }
@@ -152,13 +133,11 @@ p, label, textarea, input {
 
 /*centers media, adds a border, a gap at the top of the image, and rounds the corners of media*/
 #gallery-media {
-    margin: 0;
+    margin: auto;
     border: 2px solid black;
     margin-top: 1%;
     border-radius: 3%;
-    box-sizing: border-box;
 }
-
 
 /*places elements on the same line, in the center, and removes any button borders
 sets background colour and text colour to the same as other main content*/
@@ -197,6 +176,7 @@ textarea {
     max-width: 600px;
     max-height: 600px;
     width: 300px;
+    background-color: aliceblue;
 }
 
 /*inputs are always on a new line and centered horizontally*/
@@ -204,8 +184,26 @@ input {
     display: block;
     margin: auto;
     width: 300px;
+    background-color: aliceblue;
 }
 
+/*gives submit buttons rounded corners*/
+input[type=submit] {
+    border-radius: 30px;
+}
+
+/*changes colours when a submit button is hovered over*/
+input[type=submit]:hover {
+    color: aliceblue;
+    background-color: #bec8d1;
+}
+
+/*displays videos on a new line*/
 #videos {
     display: block;
+}
+
+/*gives videos rounded corners*/
+iframe {
+    border-radius: 30px;
 }
